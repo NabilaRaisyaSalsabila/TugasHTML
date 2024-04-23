@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Olahraga Saya</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <h1>Nabila</h1>
+            <ul>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#blog">Berita</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Nama & Deskripsi -->
+    <section id="about">
+        <div class="container">
+            <h2>Tugas Pemrograman Web</h2>
+            <p>Ini Adalah Website Untuk Tugas Pemrograman Web</p>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-grid" id="galleryContainer">
+                
+            </div>
+           
+        </div>
+        <div style="text-align:center;">
+            <a href="#gallery" class="btn" style="background-color: rgb(23, 37, 59);" onclick="loadGallery()" id="loadGalleryButton">Tekan
+                untuk Melihat Gambar</a>
+            <a href="#gallery" class="btn" style="background-color: rgb(21, 40, 65);display:none" onclick="previousGallery()"
+                id="previousGalleryButton">Sebelumnya</a>
+            <a href="#gallery" class="btn" style="background-color: rgb(13, 25, 39);display:none" onclick="nextGallery()"
+                id="nextGalleryButton">Next</a>
+        </div>
+    </section>
+
+
+    <!-- Blog -->
+    <section id="blog">
+        <div class="container" >
+            <h2>Blog</h2>
+            <div class="blog-grid"id="blogContainer">
+              
+                
+            </div>
+        </div>
+        <div style="text-align:center;">
+            <div style="text-align:center;">
+                <a href="#blog" class="btn" style="background-color: rgb(23, 37, 59);" onclick="loadBlog()" id="loadBlogButton">Tekan untuk
+                    Melihat Artikel
+                </a>
+                <a href="#blog" class="btn" style="background-color: rgb(23, 37, 59);display:none;" onclick="previousBlog()"
+                    id="previousBlogButton">Sebelumnya</a>
+                <a href="#blog" class="btn" style="background-color: rgb(23, 37, 59);display:none;" onclick="nextBlog()"
+                    id="nextBlogButton">Next</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <h2>Kontak</h2>
+            <form>
+                <!-- Formulir kontak -->
+                <input type="text" placeholder="Nama">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Pesan"></textarea>
+                <button>Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
